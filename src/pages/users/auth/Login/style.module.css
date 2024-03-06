@@ -1,0 +1,40 @@
+/* YourComponent.css */
+.dash-border {
+    position: relative;
+  }
+  
+  .dash-border::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px; /* فاصله‌ی مناسب به سمت چپ */
+    transform: translateY(-50%);
+    width: 100%; /* عرض خط داش‌دار */
+    height: 1px;
+    background: #000; /* رنگ خط داش‌دار */
+    border-bottom: 1px dashed #000; /* اگر نیاز به خط داش‌دار هم دارید */
+    z-index: 1; /* اگر خط داش‌دار به عنوان پس‌زمینه باشد */
+  }
+
+
+  .parent {
+    display: flex;
+    gap:10px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .childdiv {
+    /* border-t-1 border-dash border-t-red-500  after:w-1 h-1 rounded-full after:content-['.']   */
+    border: 1px dashed red;
+    width: 20px;
+
+
+  }
+  .childdiv::after {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: blue;
+    content: '';
+  }
