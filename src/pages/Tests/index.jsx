@@ -1,19 +1,18 @@
 import React from "react";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
+import { useLocation } from "react-router-dom";
 
-import Cards from "./Component/Cards";
-import Hero from "./Component/Hero";
-
-const Home = () => {
+const Tests = () => {
+  // const location = useLocation();
+  // console.log("location", location);
   return (
     <div>
       <Header />
-      <Hero />
-      <Cards />
+      tests
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Tests;

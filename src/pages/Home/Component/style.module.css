@@ -1,0 +1,127 @@
+.parent1 {
+    display: flex;
+    /* gap:10px; */
+    justify-content: space-between;
+    align-items: center;
+  }
+.login {
+  font-size: 18px;
+  font-weight: 500px;
+  color: red;
+}
+  .childdiv1 {
+    /* border-t-1 border-dash border-t-red-500  after:w-1 h-1 rounded-full after:content-['.']   */
+    /* border-top: 2px dashed #FDFDFD; */
+    border-top: 2px dashed #dadcea;
+    /* width: 96%; */
+    width: 100px;
+    height: 1px;
+
+    margin-top: 10px;
+    position: relative;
+
+
+  }
+  .childdiv3 {
+    /* border-t-1 border-dash border-t-red-500  after:w-1 h-1 rounded-full after:content-['.']   */
+    /* border-top: 2px dashed #FDFDFD; */
+    border-top: 2px dashed #dadcea;
+    /* width: 96%; */
+    width: 450px;
+    height: 1px;
+
+    margin-top: 10px;
+    position: relative;
+
+
+  }
+  .childdiv1::before {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    /* background-color: blue; */
+    background-color: #000000;
+    content: '';
+    position: absolute;
+    right: 0;
+    
+    top: -2px;
+    margin-right: 102px;
+  }
+  .childdiv3::before {
+    border-radius: 100%;
+    /* background-color: blue; */
+    background-color: #000000;
+    content: '';
+    position: absolute;
+    right: 0;
+    
+    top: -2px;
+    margin-right: 430px;
+  }
+  /* .childdiv1::after {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: green;
+    content: '';
+    position: absolute;
+    left: 0;
+    
+    top: -2px;
+    margin-left:-11px;
+  } */
+  .childdiv2 {
+    /* border-t-1 border-dash border-t-red-500  after:w-1 h-1 rounded-full after:content-['.']   */
+    /* border-top: 2px dashed #FDFDFD; */
+    border-top: 2px dashed #dadcea;
+    /* width: 96%; */
+    width: 499px;
+    height: 1px;
+
+    margin-top: 10px;
+    position: relative;
+
+
+  }
+  .childdiv4 {
+    /* border-t-1 border-dash border-t-red-500  after:w-1 h-1 rounded-full after:content-['.']   */
+    /* border-top: 2px dashed #FDFDFD; */
+    border-top: 2px dashed #dadcea;
+    /* width: 96%; */
+    width: 100px;
+    height: 1px;
+
+    margin-top: 10px;
+    position: relative;
+
+
+  }
+  .childdiv2::before {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    /* background-color: green; */
+    background-color: #000000;
+    content: '';
+    position: absolute;
+    left: 0;
+    
+    top: -2px;
+    /* margin-left:-11px; */
+    margin-left: 499px;
+  }
+  .childdiv4::before{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    /* background-color: green; */
+    background-color: #000000;
+    content: '';
+    position: absolute;
+    left: 0;
+    
+    top: -2px;
+    /* margin-left:-11px; */
+    margin-left: 100px;
+  }
