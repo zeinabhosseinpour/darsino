@@ -1,8 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DivLink from "../component/modal/DivLink";
+import { Doughnut } from "react-chartjs-2";
 
 const TestResults = () => {
+  const correctCount = "7";
+  const incorrectCount = 10 - correctCount;
+  const data = {
+    datasets: [
+      {
+        label: "My First dataset",
+        backgroundColor: ["#8EC66B", "#D95051"],
+
+        data: [correctCount, incorrectCount],
+
+        borderRadius: 10,
+        cutout: 300,
+        clipe: 40,
+        angle: 20,
+        weight: 30,
+        offset: 0,
+        rotation: 90,
+        borderWidth: 0,
+      },
+    ],
+  };
+
   return (
     <div className="flex flex-col justify-between items-center gap-12 sn:gap-16 p-4 sn:p-16 rounded-[15px] bg-primary-main sn:bg-neutral-gray">
       <div className="flex flex-col gap-2 sn:gap-4">
@@ -41,7 +64,7 @@ const TestResults = () => {
                   تعداد بی پاسخ : 0
                 </DivLink>
               </div>
-              <div className=" w-[100px] h-[100px] sn:w-[188px] sn:h-[188px] -rotate-90 bg-red-600"></div>
+              <Doughnut data={data}></Doughnut>
             </div>
           </div>
         </div>

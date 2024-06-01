@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import DivLink from "../../component/modal/DivLink";
+import User from "../../assets/icons/user";
 
 const Login = () => {
   return (
     <div>
       <div className="hidden sn:flex ">
-        {" "}
         <Link to="/dashboard">
           <DivLink>نیوشا زرافشان </DivLink>
         </Link>
@@ -65,7 +65,7 @@ const Login = () => {
         </Link>
       </div>
       <div className="sn:hidden flex gap-4 ">
-        <div> icon login</div>
+        <User width={"34"} height={"34"} />
       </div>
     </div>
   );

@@ -15,6 +15,8 @@ import ContactUs from "./pages/Contact Us";
 
 import Authent from "./pages/users/auth/Signin/Authent";
 import TestResults from "./pages/testResults";
+import TestDetails from "./pages/TestDetails";
+import DashBoard from "./pages/DashBoard";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/tests" element={<Tests />} />
+        <Route path="/testdetails" element={<TestDetails />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/blogs" element={<Blogs />} />
@@ -30,7 +33,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/testresults" element={<TestResults />} />
         <Route path="/shoppingcard" element={<Card />} />
-        <Route path="/dashboard" element={<Home />} />
+        <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/users/auth/login" element={<Login />} />
         <Route path="/users/auth/signin" element={<SignIn />} />
         <Route path="/users/auth/profilesubmit" element={<ProfileSubmit />} />

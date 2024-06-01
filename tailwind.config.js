@@ -22,6 +22,7 @@ export default {
           shop: "#F9F9F9",
           gray: "#414457",
           white12: "#FDFDFD1F",
+          50: "#FDFDFD80 ",
         },
         primary: {
           main: "#2B2F4C",
@@ -32,7 +33,10 @@ export default {
           35: "#2B2F4C59",
           20: "#CCCCCC33",
           gray: "#F0F0F0",
+          60: "#FDFDFD99",
           70: "#D9D9D9B2",
+          rectengle: "#313763",
+          gray2: "#4C4C4C",
         },
         secondary: {
           main: "#E84546",
@@ -65,6 +69,7 @@ export default {
         border: {
           10: "#0000001A",
           25: "#00000040",
+          57: "#00000091",
         },
       },
     },

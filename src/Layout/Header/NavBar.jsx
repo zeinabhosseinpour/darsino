@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import classes from "./style.module.css";
+import MenuLineHorizontal from "./../../assets/icons/menu-line-horizontal";
 
 const NavBar = () => {
   const location = useLocation();
@@ -148,7 +149,7 @@ const NavBar = () => {
         </Link>
        */}
       </ul>
-      <div className=" sn:hidden">icon hambergery</div>
+      <MenuLineHorizontal className=" sn:hidden w-12 h-12" />
     </nav>
   );
 };

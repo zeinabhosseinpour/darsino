@@ -11,6 +11,9 @@ import InputAnt from "../../../../component/modal/InputAnt";
 import "./global.css";
 import ButtonAnt from "../../../../component/modal/ButtonAnt";
 import InputPassword from "../../../../component/modal/InputAnt/Password";
+import Lock01 from "./../../../../assets/icons/lock01";
+import Checkrectangle from "../../../../assets/icons/checkrectangle";
+import LoginIcon from "../../../../assets/icons/loginIcon";
 
 const Login = () => {
   const validateMobileNumber = (rule, value, callback) => {
@@ -147,9 +150,8 @@ const Login = () => {
                   //   span: 16,
                   // }}
                 >
+                  <Lock01 fill={"#FDFDFD"} />
                   <span>بازیابی رمزعبور</span>
-
-                  <div>icon</div>
                 </Form.Item>
                 <Form.Item
                   name="remember"
@@ -189,9 +191,10 @@ const Login = () => {
               <Link to="/users/auth/signin">
                 <div className="flex flex-row gap-4 rounded-[15px]">
                   <Button
-                    className=" bg-secondary-main h-12 w-full px-6 py-1 text-xl font-normal border-0 text-gray-0 "
+                    className="flex items-center bg-secondary-main h-12 w-full px-6 py-1 text-xl font-normal border-0 text-gray-0 "
                     // style={{ border: "none" }}
                   >
+                    <LoginIcon fill={"#FDFDFD"} width={"34"} height={"34"} />
                     ثبت نام
                   </Button>
                 </div>

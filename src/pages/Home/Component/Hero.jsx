@@ -6,6 +6,7 @@ import Button from "../../../component/modal/Button";
 import { Link } from "react-router-dom";
 import DivLink from "../../../component/modal/DivLink";
 import { twMerge } from "tailwind-merge";
+import Booknewone2 from "../../../assets/icons/booknewone2";
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
             عکس پسر
           </div>
           <div className=" absolute  w-[173px] h-[170px] top-80 left-16 rounded-[15px] bg-primary-85 ">
-            عکس کتاب
+            <Booknewone2 width={"142"} height={"142"} />
           </div>
           <div className=" absolute w-[173px] h-[152px] top-[190px] left-[248px] rounded-[15px] bg-primary-85 ">
             عکس جام
@@ -48,7 +49,7 @@ const Hero = () => {
               <DivLink
                 textcolor={"text-tertiary-main"}
                 bgcolor={"bg-white"}
-                bordered={" border-[1px] border-tertiary-main"}
+                bordered={"border-[1px] border-tertiary-main"}
               >
                 مشاهده نمونه آزمون‌ها
               </DivLink>

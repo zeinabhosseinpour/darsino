@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Layout/Header";
 import NavBar from "../../Layout/Header/NavBar";
 import ShoppingCard from "./ShoppingCard";
-import ProfileMenu from "./ProfileMenu";
+import ProfileMenu from "./../../Layout/ProfileMenu";
 
 const Card = () => {
   return (

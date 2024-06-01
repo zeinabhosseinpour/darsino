@@ -6,6 +6,9 @@ import { Button, Checkbox, Form, Input } from "antd";
 import Header from "../../../../Layout/Header";
 import ButtonAnt from "../../../../component/modal/ButtonAnt";
 import DivLink from "../../../../component/modal/DivLink";
+import Repeat from "../../../../assets/icons/repeat";
+import Send from "../../../../assets/icons/send";
+import LoginIcon from "../../../../assets/icons/loginIcon";
 
 const Authent = () => {
   return (
@@ -76,13 +79,13 @@ const Authent = () => {
 
             <div className="flex justify-between sn:items-start sn:text-right  sn:gap-2  sn:flex-col-reverse">
               <div className="flex items-center gap-2">
-                <div>icon</div>
+                <Send fill={"#FDFDFD"} />
                 <span className=" text-base font-medium text-white text-right">
                   تغییر شماره تلفن
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <div>icon</div>
+                <Repeat fill={"#FDFDFD"} />
                 <span className=" text-base font-medium text-white text-right">
                   ارسال کد مجدد
                 </span>
@@ -115,8 +118,14 @@ const Authent = () => {
               </Button>
             </div>
           </Link> */}
+
           <Link to="/users/auth/login">
-            <DivLink>ورود</DivLink>
+            <div className="flex flex-row gap-4 rounded-[15px]">
+              <Button className=" bg-secondary-main h-12 w-full px-6 py-1 text-xl font-normal text-gray-0 ">
+                <LoginIcon fill={"#FDFDFD"} width={"34"} height={"34"} />
+                ورود
+              </Button>
+            </div>
           </Link>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DivLink from "../../../../component/modal/DivLink";
+import Arrowleft from "../../../../assets/icons/arrowleft";
 
 const Videos = () => {
   return (
@@ -18,7 +19,7 @@ const Videos = () => {
           <Link to="/videos ">
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               مشاهده بیشتر
-              <div>icon</div>
+              <Arrowleft stroke={"#FDFDFD"} width={"36"} height={"36"} />
             </DivLink>
           </Link>
         </div>

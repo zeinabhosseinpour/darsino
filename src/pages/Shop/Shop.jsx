@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DivLink from "../../component/modal/DivLink";
+import Informationcircle from "../../assets/icons/informationcircle";
 
 const Shopp = () => {
   return (
@@ -32,7 +33,11 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden w-[30px] h-[30px] gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle
+                stroke={"#FDFDFD"}
+                width={"14"}
+                height={"14"}
+              />
             </div>
             {/* <Link to="/productdetails">
               <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
@@ -76,7 +81,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             {/* <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
               <span className=" text-sm leading-5 font-normal text-tertiary-main">
@@ -118,7 +123,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             <Link to="/productdetails" className="hidden sn:flex">
               <DivLink
@@ -155,7 +160,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             <Link to="/productdetails" className="hidden sn:flex">
               <DivLink
@@ -192,7 +197,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
               <span className=" text-sm leading-5 font-normal text-tertiary-main">
@@ -205,7 +210,8 @@ const Shopp = () => {
           className="flex flex-col px-3 py-4 sn:p-8 gap-3   sn:gap-6 border-[1px] border-border-10  bg-neutral-white shadow-[0_0_5px_1px_#0000001A]
        rounded-[15px]  text-right "
         >
-          <div className=" bg-primary-35 rounded-[10px]">icon</div>
+          <Informationcircle stroke={"#FDFDFD"} width={"14"} height={"14"} />
+          <div className=" bg-primary-35 rounded-[10px]"></div>
           <div className="flex flex-col items-start text-right gap-3">
             <span className="text-secondary-main sn:text-tertiary-main text-base leading-8 font-medium sn:text-2xl sn:font-normal ">
               کلاس آنلاین
@@ -225,7 +231,11 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle
+                stroke={"#FDFDFD"}
+                width={"14"}
+                height={"14"}
+              />
             </div>
             <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
               <span className=" text-sm leading-5 font-normal text-tertiary-main">
@@ -258,7 +268,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
               <span className=" text-sm leading-5 font-normal text-tertiary-main">
@@ -291,7 +301,7 @@ const Shopp = () => {
               </span>
             </div>
             <div className="flex sn:hidden gap-1 p-2 rounded-[15px] bg-secondary-main">
-              icon
+              <Informationcircle width={"14"} height={"14"} />
             </div>
             <div className="hidden sn:flex sn:py-2 sn:px-3 sn:gap-[10px] rounded-[15px] border-[1px] border-tertiary-main">
               <span className=" text-sm leading-5 font-normal text-tertiary-main">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DivLink from "../../component/modal/DivLink";
+import Cart from "../../assets/icons/cart";
 
 const ProductDetails = () => {
   return (
@@ -35,7 +36,7 @@ const ProductDetails = () => {
               flex={"flex items-center gap-1 sn:gap-[10px]"}
             >
               افزودن به کارت
-              <div>icon</div>
+              <Cart fill={"#FDFDFD"} width={"28"} height={"28"} />
             </DivLink>
           </Link>
         </div>

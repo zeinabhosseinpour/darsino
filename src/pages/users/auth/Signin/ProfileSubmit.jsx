@@ -4,6 +4,8 @@ const { Option } = Select;
 import { Link } from "react-router-dom";
 import classes from "./style.module.css";
 import Header from "../../../../Layout/Header";
+import LoginIcon from "../../../../assets/icons/loginIcon";
+import ButtonAnt from "../../../../component/modal/ButtonAnt";
 
 const ProfileSubmit = () => {
   return (
@@ -149,6 +151,17 @@ const ProfileSubmit = () => {
               </Select>
             </Form.Item>
           </Form.Item>
+          <Form.Item
+          // wrapperCol={{
+          //   offset: 8,
+          //   span: 16,
+          // }}
+          >
+            <Link to="/users/auth">
+              <Button type="primary" htmlType="submit"></Button>
+              <ButtonAnt>ادامه</ButtonAnt>
+            </Link>
+          </Form.Item>
         </Form>
         <div className="sn:hidden flex flex-col  px-0 pt-0 pb-16 gap-4">
           <div className={classes.childdiv1}></div>
@@ -156,9 +169,10 @@ const ProfileSubmit = () => {
             <span className="text-2xl font-semibold text-text-white">
               حساب کاربری دارید؟
             </span>
-            <Link to="/submit">
+            <Link to="/users/auth/login">
               <div className="flex flex-row gap-4 rounded-[15px]">
                 <Button className=" bg-secondary-main h-12 w-full px-6 py-1 text-xl font-normal text-gray-0 ">
+                  <LoginIcon fill={"#FDFDFD"} width={"34"} height={"34"} />
                   ورود
                 </Button>
               </div>

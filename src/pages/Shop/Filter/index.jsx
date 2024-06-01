@@ -3,6 +3,8 @@ import Button2 from "../../../component/modal/Button2";
 import ButtonShop from "../../../component/modal/ButtonShop";
 import DivLink from "../../../component/modal/DivLink";
 import { Link } from "react-router-dom";
+import Search03 from "../../../assets/icons/search03";
+import Directiondown01 from "./../../../assets/icons/directiondown01";
 
 const Filter = () => {
   return (
@@ -20,7 +22,9 @@ const Filter = () => {
           <span className=" text-base sn:text-[28px] leading-8 sn:leading-9 font-medium sn:font-normal text-tertiary-main">
             جستجو محصولات
           </span>
-          <div className=" text-tertiary-main">icon</div>
+          <div className=" text-tertiary-main">
+            <Search03 width={"32"} height={"32"} />
+          </div>
         </div>
       </div>
       <div className="flex flex-col sn:flex-row sn:items-center gap-4 sn:gap-8 py-8 px-4 sn:px-16 mt-7 ">
@@ -28,13 +32,13 @@ const Filter = () => {
           <Link to="/category ">
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               دسته بندی ها
-              <div>icon</div>
+              <Directiondown01 stroke={"#FDFDFD"} width={"28"} height={"28"} />
             </DivLink>
           </Link>
           <Link to="/filters ">
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               مرتب سازی
-              <div>icon</div>
+              <Directiondown01 stroke={"#FDFDFD"} width={"28"} height={"28"} />
             </DivLink>
           </Link>
           <DivLink
@@ -53,7 +57,7 @@ const Filter = () => {
             bordered={" border-[1px] border-tertiary-main"}
           >
             جستجو محصولات
-            <div>icon</div>
+            <Search03 fill={"#8F3747"} width={"32"} height={"32"} />
           </DivLink>
         </Link>
       </div>

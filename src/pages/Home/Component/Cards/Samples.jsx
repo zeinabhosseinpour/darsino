@@ -2,6 +2,7 @@ import React from "react";
 import DivLink from "../../../../component/modal/DivLink";
 
 import { Link } from "react-router-dom";
+import Arrowleft from "../../../../assets/icons/arrowleft";
 
 const Samples = () => {
   return (
@@ -26,7 +27,7 @@ const Samples = () => {
           <Link to="/Q/A ">
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               دریافت نمونه سوال‌ها
-              <div>icon</div>
+              <Arrowleft stroke={"#FDFDFD"} width={"36"} height={"36"} />
             </DivLink>
           </Link>
         </div>

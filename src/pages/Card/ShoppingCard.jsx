@@ -1,5 +1,6 @@
 import React from "react";
 import DivLink from "../../component/modal/DivLink";
+import Card from "../../assets/icons/card";
 
 const ShoppingCard = () => {
   return (
@@ -185,7 +186,7 @@ const ShoppingCard = () => {
         </div> */}
         <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
           پرداخت
-          <div>icon</div>
+          <Card stroke={"#FDFDFD"} width={"28"} height={"28"} />
         </DivLink>
       </div>
     </div>

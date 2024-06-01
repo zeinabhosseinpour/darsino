@@ -10,6 +10,8 @@ import ButtonAnt from "../../../../component/modal/ButtonAnt";
 import InputPassword from "../../../../component/modal/InputAnt/Password";
 import "./global.css";
 import classes from "./style.module.css";
+import In from "../../../../assets/icons/in";
+import Lock01 from "../../../../assets/icons/lock01";
 const SignIn = () => {
   const validateMobileNumber = (rule, value, callback) => {
     const mobileNumberPattern = /^(\+98|0)?9\d{9}$/;
@@ -118,31 +120,16 @@ const SignIn = () => {
               <InputPassword />
             </Form.Item>
 
-            <Form.Item name="restore">
-              <div className="flex  items-center gap-2">
-                <span>بازیابی رمزعبور</span>
-                <div>icon</div>
-                <Form.Item
-                  name="remember"
-                  valuePropName="checked"
-                  // wrapperCol={{
-                  //   offset: 8,
-                  //   span: 16,
-                  // }}
-                >
-                  <Checkbox>من را بخاطر بسپار</Checkbox>
-                </Form.Item>
-              </div>
-            </Form.Item>
-
             <Form.Item
             // wrapperCol={{
             //   offset: 8,
             //   span: 16,
             // }}
             >
-              <Button type="primary" htmlType="submit"></Button>
-              <ButtonAnt>ثبت نام</ButtonAnt>
+              <Link to="/users/auth/profilesubmit">
+                <Button type="primary" htmlType="submit"></Button>
+                <ButtonAnt>ثبت نام</ButtonAnt>
+              </Link>
             </Form.Item>
           </Form>
         </div>
@@ -152,9 +139,10 @@ const SignIn = () => {
             <span className="text-2xl font-semibold text-text-white">
               حساب کاربری دارید؟
             </span>
-            <Link to="/submit">
+            <Link to="/users/auth/login">
               <div className="flex flex-row gap-4 rounded-[15px]">
                 <Button className=" bg-secondary-main h-12 w-full px-6 py-1 text-xl font-normal text-gray-0 ">
+                  <In stroke={"#FDFDFD"} width={"34"} height={"34"} />
                   ورود
                 </Button>
               </div>

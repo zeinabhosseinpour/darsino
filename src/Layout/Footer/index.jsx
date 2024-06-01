@@ -4,6 +4,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import DivLink from "../../component/modal/DivLink";
+import Telegram from "../../assets/icons/telegram";
+import Instagram from "../../assets/icons/instagram";
+import Mail from "../../assets/icons/mail";
+import Linkedin from "../../assets/icons/linkedin";
 
 const Footer = () => {
   return (
@@ -141,17 +145,17 @@ const Footer = () => {
             <div className="flex flex-col gap-2 sn:gap-4 text-left justify-center items-end  ">
               <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
                 Linkdin
-                <div>icon</div>
+                <Linkedin />
               </DivLink>
 
               <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
                 Instagram
-                <div>icon</div>
+                <Instagram />
               </DivLink>
 
               <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
                 info@darsino.com
-                <div>icon</div>
+                <Mail />
               </DivLink>
             </div>
             <div className=" w-40 h-40 sn:w-[300px] sn:h-[300px]  rounded-xl bg-neutral-gray75">
@@ -169,12 +173,12 @@ const Footer = () => {
           <div className="flex justify-center gap-2">
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               کانال تلگرام
-              <div>icon</div>
+              <Telegram fill={"#FDFDFD"} width={"24"} height={"24"} />
             </DivLink>
 
             <DivLink flex={"flex items-center gap-1 sn:gap-[10px]"}>
               پشتیبانی تلگرام
-              <div>icon</div>
+              <Telegram fill={"#FDFDFD"} width={"24"} height={"24"} />
             </DivLink>
           </div>
         </div>
